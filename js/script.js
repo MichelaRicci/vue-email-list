@@ -2,6 +2,15 @@ console.log('JS OK');
 
 
 
+// Prova console.log mail
+
+axios.get('https://flynn.boolean.careers/exercises/api/random/mail').then((response) => {
+    const result = response.data.response;
+    console.log(result);
+})
+
+
+
 const app = Vue.createApp({
     data() {
         return {
